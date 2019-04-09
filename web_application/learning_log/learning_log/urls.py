@@ -19,6 +19,6 @@ from learning_logs import urls as app_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path(r'', include((app_urls, 'learning_logs.urls'), namespace='learning_logs')),
+    path('', include((app_urls, 'learning_logs.urls'), namespace='learning_logs')),
 ]
 
