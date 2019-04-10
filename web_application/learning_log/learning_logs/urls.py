@@ -34,4 +34,8 @@ urlpatterns = [
 
     # 用于添加新条目的页面
     path('new_entry/<topic_id>', views.new_entry, name='new_entry'),
+
+    # 用于编辑条目的页面
+    path('edit_entry/<entry_id>', views.edit_entry, name='edit_entry'),
+
 ]
