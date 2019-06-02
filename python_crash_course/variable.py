@@ -1,15 +1,15 @@
 # -*- coding:utf-8 -*-
 
-first_name='albert'
-last_name='einstein'
-full_name=first_name+' '+last_name
-full_name=full_name.title()
-message='"A person who never made a mistake never tried anything new"'
+first_name = 'albert'
+last_name = 'einstein'
+full_name = first_name+' '+last_name
+full_name = full_name.title()
+message = '"A person who never made a mistake never tried anything new"'
 #print(full_name+' once said, '+message)
 #print('Languages:\nPython\nC\nJavaScript')
 
-favorite_language=' Python '
-favorite_language=favorite_language.lstrip()
+favorite_language = ' Python '
+favorite_language = favorite_language.lstrip()
 #print(favorite_language)
 
 # 剔出字符串开头的空白：lstrip();剔出字符串末尾的空白：rstrip();剔出字符串两端的空白：strip()
@@ -285,7 +285,7 @@ class Battery():
 
 class ElectricCar(Car):
 
-    def __init__(self,make,model,year,battery_size = 70):
+    def __init__(self,make,model,year,battery_size=70):
         super().__init__(make,model,year)
         self.battery = Battery(battery_size)
 
@@ -293,8 +293,6 @@ my_tesla = ElectricCar('tesla','model s',2019,85)
 print(my_tesla.get_descriptive_name())
 my_tesla.battery.describe_battery()
 my_tesla.battery.get_range()
-
-
 
 #example12:
 
@@ -323,11 +321,6 @@ with open(filename,'a') as file_object:
 
 
 #example14:
-
-try:
-    print(5/0)
-except ZeroDivisionError:
-    print("You can't divide by zero!")
 
 message = "Give me two numbers,and I'll divide them."
 message += "\nEnter 'q' to quit."
@@ -393,7 +386,7 @@ def greet_user():
         print("Welcome back," + username + "!")
     else:
         username = get_new_username()
-        print("We'll remeber you when you come back," + username + "!")
+        print("We'll remember you when you come back," + username + "!")
 
 greet_user()
 
